@@ -9,8 +9,6 @@
 #  updated_at :datetime         not null
 #
 
-require 'rails_helper'
-
-RSpec.describe Post, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+class PostSerializer < ActiveModel::Serializer
+  attributes :id, :title, :content
 end
