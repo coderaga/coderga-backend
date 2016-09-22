@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  # => For Active model serializer
+  include ActionController::Serialization
+
   before_action :set_post, only: [:show, :update, :destroy]
 
   # GET /posts
