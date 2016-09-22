@@ -47,8 +47,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #-------------------- Gems by VoidZero -----------------------------
 # Devise is a flexible authentication solution 
 gem 'devise'
-# MS provides a clean layer between the model and the controller 
+# AMS provides a clean layer between the model and the controller 
 # that lets us to call to_json or as_json on the ActiveRecord object 
 # or collection as normal, while outputing our desired API format.
 gem 'active_model_serializers'
+# => To protect our API from DDoS, brute force attacks, hammering
+gem 'rack-attack'
 #-------------------------------------------------------------------

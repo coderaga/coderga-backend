@@ -34,5 +34,8 @@ module CoderagaBackend
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+
+    # => Config for Rack Attack gem
+    config.middleware.use Rack::Attack
   end
 end
